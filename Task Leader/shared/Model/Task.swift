@@ -50,7 +50,7 @@ var tasks: [TaskMetaData] = [
 
 struct Task_Previews: PreviewProvider {
     static var previews: some View {
-        Task()
+        Home()
     }
 }
 

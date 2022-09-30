@@ -11,10 +11,11 @@
 		FA02F12A28E61E4E00D35F29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F12928E61E4E00D35F29 /* ContentView.swift */; };
 		FA02F12C28E61E5400D35F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA02F12B28E61E5400D35F29 /* Assets.xcassets */; };
 		FA02F12F28E61E5400D35F29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA02F12E28E61E5400D35F29 /* Preview Assets.xcassets */; };
-		FA02F13828E61EF100D35F29 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F13728E61EF100D35F29 /* DateValue.swift */; };
-		FA02F13A28E61EFE00D35F29 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F13928E61EFE00D35F29 /* Task.swift */; };
-		FA02F13D28E61F1B00D35F29 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F13C28E61F1B00D35F29 /* Home.swift */; };
-		FA02F13F28E61F3800D35F29 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F13E28E61F3800D35F29 /* CustomDatePicker.swift */; };
+		FA02F14128E7623000D35F29 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F14028E7623000D35F29 /* TaskView.swift */; };
+		FA02F14428E7641100D35F29 /* TaskLeaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F14328E7641100D35F29 /* TaskLeaderApp.swift */; };
+		FA02F14828E76E4D00D35F29 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F14728E76E4D00D35F29 /* TaskRow.swift */; };
+		FA02F14A28E76F9D00D35F29 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F14928E76F9D00D35F29 /* AddTaskView.swift */; };
+		FA02F14C28E7724600D35F29 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F14B28E7724600D35F29 /* SmallAddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +24,11 @@
 		FA02F12928E61E4E00D35F29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA02F12B28E61E5400D35F29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA02F12E28E61E5400D35F29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FA02F13728E61EF100D35F29 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
-		FA02F13928E61EFE00D35F29 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		FA02F13C28E61F1B00D35F29 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		FA02F13E28E61F3800D35F29 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		FA02F14028E7623000D35F29 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		FA02F14328E7641100D35F29 /* TaskLeaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLeaderApp.swift; sourceTree = "<group>"; };
+		FA02F14728E76E4D00D35F29 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		FA02F14928E76F9D00D35F29 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		FA02F14B28E7724600D35F29 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,6 @@
 		FA02F11B28E61E4E00D35F29 = {
 			isa = PBXGroup;
 			children = (
-				FA02F13528E61EBA00D35F29 /* shared */,
 				FA02F12628E61E4E00D35F29 /* Task Leader */,
 				FA02F12528E61E4E00D35F29 /* Products */,
 			);
@@ -61,9 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				FA02F12728E61E4E00D35F29 /* Task_LeaderApp.swift */,
-				FA02F12928E61E4E00D35F29 /* ContentView.swift */,
+				FA02F14628E76E1600D35F29 /* Components */,
+				FA02F14228E7624B00D35F29 /* Views */,
 				FA02F12B28E61E5400D35F29 /* Assets.xcassets */,
 				FA02F12D28E61E5400D35F29 /* Preview Content */,
+				FA02F14328E7641100D35F29 /* TaskLeaderApp.swift */,
 			);
 			path = "Task Leader";
 			sourceTree = "<group>";
@@ -76,31 +79,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FA02F13528E61EBA00D35F29 /* shared */ = {
+		FA02F14228E7624B00D35F29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA02F13B28E61F0B00D35F29 /* View */,
-				FA02F13628E61ED300D35F29 /* Model */,
+				FA02F12928E61E4E00D35F29 /* ContentView.swift */,
+				FA02F14028E7623000D35F29 /* TaskView.swift */,
+				FA02F14928E76F9D00D35F29 /* AddTaskView.swift */,
 			);
-			path = shared;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		FA02F13628E61ED300D35F29 /* Model */ = {
+		FA02F14628E76E1600D35F29 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FA02F13728E61EF100D35F29 /* DateValue.swift */,
-				FA02F13928E61EFE00D35F29 /* Task.swift */,
+				FA02F14728E76E4D00D35F29 /* TaskRow.swift */,
+				FA02F14B28E7724600D35F29 /* SmallAddButton.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FA02F13B28E61F0B00D35F29 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FA02F13C28E61F1B00D35F29 /* Home.swift */,
-				FA02F13E28E61F3800D35F29 /* CustomDatePicker.swift */,
-			);
-			path = View;
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,12 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA02F13A28E61EFE00D35F29 /* Task.swift in Sources */,
-				FA02F13828E61EF100D35F29 /* DateValue.swift in Sources */,
-				FA02F13F28E61F3800D35F29 /* CustomDatePicker.swift in Sources */,
-				FA02F13D28E61F1B00D35F29 /* Home.swift in Sources */,
+				FA02F14828E76E4D00D35F29 /* TaskRow.swift in Sources */,
+				FA02F14128E7623000D35F29 /* TaskView.swift in Sources */,
 				FA02F12A28E61E4E00D35F29 /* ContentView.swift in Sources */,
+				FA02F14A28E76F9D00D35F29 /* AddTaskView.swift in Sources */,
+				FA02F14C28E7724600D35F29 /* SmallAddButton.swift in Sources */,
 				FA02F12828E61E4E00D35F29 /* Task_LeaderApp.swift in Sources */,
+				FA02F14428E7641100D35F29 /* TaskLeaderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
